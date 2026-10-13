@@ -1,0 +1,32 @@
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+.aws/
+
+# Local agent configuration
+.agents/
+.codex/
+.sites-checkout/
+
+# Dependencies and caches
+node_modules/
+__pycache__/
+*.py[cod]
+.cache/
+
+# Logs and local test artifacts
+*.log
+playwright-report/
+test-results/
+
+# Editor and operating system files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# dist/ contains the site source; keep it tracked.
+# .openai/hosting.json contains the Site identity; keep it tracked.
