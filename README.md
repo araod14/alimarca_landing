@@ -24,10 +24,15 @@ El sitio de Sites configurado en `.openai/hosting.json` es una publicación sepa
 
 ## Clientes y fuentes de logotipos
 
-Los cinco clientes fueron confirmados por el propietario. La sección distingue empresas e instituciones públicas y no especifica proyectos ni fechas. Los logotipos se sirven localmente desde `dist/assets/clientes/`, sin depender de servidores externos.
+Los clientes incluidos fueron confirmados por el propietario. La sección distingue empresas e instituciones públicas y no especifica proyectos ni fechas. Los logotipos se sirven localmente desde `dist/assets/clientes/`, sin depender de servidores externos.
 
 - PDVSA: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:PDV_S.A._logo.svg), vector atribuido al manual de identidad corporativa.
 - Chevron: [guía corporativa oficial](https://www.chevronlubricants.com/content/dam/internal/common/en_us/resources/Chevron_corporate_logo_overview.pdf); versión de colores planos y texto azul extraída del PDF, sin modificar colores ni proporciones.
 - INCES: [recurso del sitio oficial](https://inces.gob.ve/media/images/inces_2.original.png), versión blanca presentada sobre fondo azul para asegurar el contraste.
 - Gobernación del Estado Anzoátegui: [recurso del sitio oficial](https://anzoategui.gob.ve/wp-content/uploads/2022/02/logo-footer.png).
-- Alcaldía de Píritu, estado Anzoátegui: se muestra su nombre hasta disponer de un logotipo verificable.
+
+### Clientes adicionales
+
+- PDVSA Agrícola: cliente confirmado por el propietario. Se utiliza el emblema corporativo de PDVSA junto al nombre de la filial; no se presenta como un logotipo específico de Agrícola. Pendiente sustituirlo cuando se disponga de un recurso verificable.
+- PDVSA Gas: [imagen de perfil de la cuenta PDVSAGas_2024](https://pbs.twimg.com/profile_images/1761754955940089857/Kt3X0Icn_400x400.jpg).
+- CVP, Corporación Venezolana del Petróleo: [referencia PDVSA-CVP publicada por Corporación Suago](https://www.suago.com.ve/wp-content/uploads/2026/01/image-e1768304411629.webp) (fuente secundaria).
