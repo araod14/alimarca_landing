@@ -1,5 +1,5 @@
 // Configure the confirmed commercial contacts here. Keep unknown values empty.
-const CONTACT = Object.freeze({ whatsapp: '', email: '' });
+const CONTACT = Object.freeze({ whatsapp: '584124843172', email: '' });
 
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
@@ -30,6 +30,16 @@ function enableChannel(id, label, href) {
   link.textContent = label;
   link.href = href;
   if (href.startsWith('https://')) { link.target = '_blank'; link.rel = 'noopener noreferrer'; }
+  if (id === 'whatsapp-channel') {
+    const icon = document.querySelector(`#${id} > .channel-icon`);
+    link.className = 'channel-icon';
+    link.setAttribute('aria-label', label);
+    link.title = label;
+    link.replaceChildren(...icon.childNodes);
+    icon.replaceWith(link);
+    container.querySelector('span').remove();
+    return;
+  }
   container.querySelector('span').replaceWith(link);
 }
 if (/^[1-9]\d{6,14}$/.test(CONTACT.whatsapp)) {
