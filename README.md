@@ -31,8 +31,6 @@ Los clientes incluidos fueron confirmados por el propietario. La sección distin
 - INCES: [recurso del sitio oficial](https://inces.gob.ve/media/images/inces_2.original.png), versión blanca presentada sobre fondo azul para asegurar el contraste.
 - Gobernación del Estado Anzoátegui: [recurso del sitio oficial](https://anzoategui.gob.ve/wp-content/uploads/2022/02/logo-footer.png).
 
-### Clientes adicionales
+### Grupo PDVSA
 
-- PDVSA Agrícola: cliente confirmado por el propietario. Se utiliza el emblema corporativo de PDVSA junto al nombre de la filial; no se presenta como un logotipo específico de Agrícola. Pendiente sustituirlo cuando se disponga de un recurso verificable.
-- PDVSA Gas: [imagen de perfil de la cuenta PDVSAGas_2024](https://pbs.twimg.com/profile_images/1761754955940089857/Kt3X0Icn_400x400.jpg).
-- CVP, Corporación Venezolana del Petróleo: [referencia PDVSA-CVP publicada por Corporación Suago](https://www.suago.com.ve/wp-content/uploads/2026/01/image-e1768304411629.webp) (fuente secundaria).
+PDVSA se muestra en una sola tarjeta con el emblema corporativo. Debajo se mencionan Agrícola, Gas y CVP (Corporación Venezolana del Petróleo), confirmadas por el propietario. Los recursos de Gas y CVP conservados en assets no se utilizan en la página.
