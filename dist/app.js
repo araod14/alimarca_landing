@@ -51,6 +51,25 @@ if (/^[1-9]\d{6,14}$/.test(CONTACT.whatsapp)) {
     link.rel = 'noopener noreferrer';
     link.hidden = false;
   });
+  const quoteForm = document.querySelector('#quote-form');
+  if (quoteForm) {
+    quoteForm.hidden = false;
+    quoteForm.addEventListener('submit', event => {
+      event.preventDefault();
+      const data = new FormData(quoteForm);
+      const field = name => String(data.get(name) || '').trim();
+      const name = field('name');
+      const lines = [
+        'Hola, quisiera solicitar una cotización para un proyecto.',
+        `Servicio: ${field('service')}`,
+        `Ubicación: ${field('location')}`,
+        `Descripción: ${field('details')}`
+      ];
+      if (name) lines.push(`Nombre: ${name}`);
+      const href = `https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent(lines.join('\n'))}`;
+      window.open(href, '_blank', 'noopener');
+    });
+  }
 }
 if (/^[1-9]\d{6,14}$/.test(CONTACT.phone)) {
   enableChannel('phone-channel', `+${CONTACT.phone}`, `tel:+${CONTACT.phone}`);
