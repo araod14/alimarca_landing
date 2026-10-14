@@ -1,5 +1,5 @@
 // Configure the confirmed commercial contacts here. Keep unknown values empty.
-const CONTACT = Object.freeze({ whatsapp: '584124843172', phone: '584124843172', email: 'jmoreno@alimarca.com' });
+const CONTACT = Object.freeze({ whatsapp: '584124843172', phone: '584124843172', email: 'jmoreno@multiservicioalimar.com' });
 
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
