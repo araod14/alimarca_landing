@@ -34,3 +34,7 @@ Los clientes incluidos fueron confirmados por el propietario. La sección distin
 ### Grupo PDVSA
 
 PDVSA se muestra en una sola tarjeta con el emblema corporativo. Debajo se mencionan Agrícola, Gas y CVP (Corporación Venezolana del Petróleo), confirmadas por el propietario. Los recursos de Gas y CVP conservados en assets no se utilizan en la página.
+
+## Cotización y preguntas frecuentes
+
+El botón de cotización y el acceso flotante móvil de WhatsApp usan exclusivamente `CONTACT.whatsapp` en `dist/app.js`. Permanecen ocultos si el número está vacío o no es válido, y comparten el mensaje del canal existente. La sección de pasos orienta la solicitud sin prometer visitas, precios ni plazos. Las preguntas frecuentes utilizan los servicios y la cobertura publicados; se pueden actualizar en `dist/index.html`.

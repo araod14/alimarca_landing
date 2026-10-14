@@ -1,5 +1,5 @@
 // Configure the confirmed commercial contacts here. Keep unknown values empty.
-const CONTACT = Object.freeze({ whatsapp: '584124843172', email: '' });
+const CONTACT = Object.freeze({ whatsapp: '584124843172', email: 'jmoreno@alimarca.com' });
 
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
@@ -43,7 +43,14 @@ function enableChannel(id, label, href) {
   container.querySelector('span').replaceWith(link);
 }
 if (/^[1-9]\d{6,14}$/.test(CONTACT.whatsapp)) {
-  enableChannel('whatsapp-channel', 'Solicitar por WhatsApp', `https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent('Hola, quisiera solicitar una cotización para un proyecto. Servicio: __. Ubicación: __. Descripción: __.')}`);
+  const whatsappHref = `https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent('Hola, quisiera solicitar una cotización para un proyecto. Servicio: __. Ubicación: __. Descripción: __.')}`;
+  enableChannel('whatsapp-channel', 'Solicitar por WhatsApp', whatsappHref);
+  document.querySelectorAll('[data-whatsapp-link]').forEach(link => {
+    link.href = whatsappHref;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.hidden = false;
+  });
 }
 if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(CONTACT.email)) {
   enableChannel('email-channel', CONTACT.email, `mailto:${CONTACT.email}?subject=${encodeURIComponent('Solicitud de cotización')}`);
