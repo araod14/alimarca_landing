@@ -1,5 +1,5 @@
 // Configure the confirmed commercial contacts here. Keep unknown values empty.
-const CONTACT = Object.freeze({ whatsapp: '584124843172', email: 'jmoreno@alimarca.com' });
+const CONTACT = Object.freeze({ whatsapp: '584124843172', phone: '584124843172', email: 'jmoreno@alimarca.com' });
 
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
@@ -51,6 +51,9 @@ if (/^[1-9]\d{6,14}$/.test(CONTACT.whatsapp)) {
     link.rel = 'noopener noreferrer';
     link.hidden = false;
   });
+}
+if (/^[1-9]\d{6,14}$/.test(CONTACT.phone)) {
+  enableChannel('phone-channel', `+${CONTACT.phone}`, `tel:+${CONTACT.phone}`);
 }
 if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(CONTACT.email)) {
   enableChannel('email-channel', CONTACT.email, `mailto:${CONTACT.email}?subject=${encodeURIComponent('Solicitud de cotización')}`);

@@ -8,11 +8,13 @@ Ejecutar `python3 -m http.server 8000 --directory dist` y abrir http://localhost
 
 ## Contactos
 
-Editar `CONTACT` en `dist/app.js`: `whatsapp` contiene el número confirmado con código de país, solo dígitos; `email` contiene el correo comercial confirmado. Los canales vacíos permanecen pendientes sin enlaces ficticios.
+Editar `CONTACT` en `dist/app.js`: `whatsapp` y `phone` contienen números confirmados con código de país, solo dígitos; `email` contiene el correo comercial confirmado. El canal de teléfono genera un enlace `tel:` para llamar desde el móvil. Los canales vacíos o inválidos permanecen pendientes sin enlaces ficticios.
 
 ## Recursos
 
-Logo proporcionado por el cliente. La portada utiliza una fotografía ilustrativa de Unsplash cargada desde su CDN, con fondo azul de respaldo si no hay conexión. No representa un proyecto de Alimar. Reemplazar por una fotografía propia cuando esté disponible.
+Logo proporcionado por el cliente. La portada usa una fotografía ilustrativa autoalojada en `dist/assets/` (`hero-1920.jpg` para escritorio y `hero-1200.jpg` para móvil), con fondo azul de respaldo si la imagen no carga. Procede de Unsplash (licencia de uso libre) y no representa un proyecto de Alimar. Reemplazar por una fotografía propia cuando esté disponible, conservando los dos tamaños.
+
+El sitio expone metadatos Open Graph, enlace canónico y datos estructurados `GeneralContractor` (JSON-LD) en `dist/index.html`, más `dist/robots.txt`, `dist/sitemap.xml` y `dist/404.html`. Las URLs absolutas apuntan a `https://multiservicioalimar.com/`; actualizarlas si cambia el dominio. Para una vista previa con imagen propia al compartir el enlace, reemplazar la `og:image` (hoy usa el logo).
 
 Los datos de ejemplo que aparecen en la página no son enlaces de contacto. Reemplazarlos con los datos comerciales confirmados antes de anunciar el sitio.
 
